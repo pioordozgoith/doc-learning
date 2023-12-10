@@ -2,7 +2,7 @@ site_name: My Docs
 site_author: pioordoz
 
 # Configuration
-theme:
+theme: 
   name: material
   features:
     - announce.dismiss
@@ -13,15 +13,16 @@ theme:
     - content.tooltips
     - navigation.footer
     - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
     - navigation.top
+    - navigation.expand
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-
+    # - toc.integrate
+    
+     
   palette:
     - scheme: default
       primary: indigo
@@ -42,7 +43,23 @@ theme:
   icon:
     logo: logo
 
+
+# Extensions
+
 markdown_extensions:
+  - tables
+  - md_in_html
+  - attr_list
+  - codehilite
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - toc:
+      permalink: true
+
+# Page tree
+
+nav:
+  - Home: index.md
+  - Niveis: 
+    - Niveis: niveis.md
