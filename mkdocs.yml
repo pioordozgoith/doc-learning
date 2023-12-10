@@ -63,3 +63,8 @@ nav:
   - Home: index.md
   - Niveis: 
     - Niveis: niveis.md
+
+
+extra:
+  version:
+    provider: mike
